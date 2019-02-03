@@ -9,7 +9,7 @@ public class VANZOO{
     static int totald;
     static int tochild;
     public VANZOO(){
-        this.getout("Enter 1 if you are visiting\n2 to see the end list\n3 to exit\n");
+        this.getout("Enter\n1 if you are visiting\n2 to see the end list\n0 to exit\n");
     }
     // public VANZOO(int b)
     // {
@@ -51,10 +51,10 @@ public class VANZOO{
                 v.getout("\nEnter the number of Children Visitors: ");
                 v.children=v.getin();
                 v.tochild=v.tochild+v.children;
-                v.getout("\nEnter 1 if you are visiting\n2 to see the end list\n3 to exit\n");
+                v.getout("\n************************************************************\nEnter 1 if you are visiting\n2 to see the end list\n0 to exit\n");
             }
             if(v.decide==2)
-            {
+            {   v.getout("**************************************************************\n");
                 v.getout("The total number of Adults visited = ");
                 v.getout(v.totald);
                 v.getout("\nThe total number of Children visited = ");
@@ -63,7 +63,7 @@ public class VANZOO{
                 int sum1 = v.totald*50;
                 int sum2 = v.tochild*20;
                 v.getout(add(sum1,sum2));
-                v.getout("\nEnter 1 if you are visiting\n2 to see the end list\n3 to exit\n");
+                v.getout("\n***********************************************************\nEnter 1 if you are visiting\n2 to see the end list\n0 to exit\n");
             }
         }
             
