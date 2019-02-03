@@ -9,12 +9,13 @@ public class VANZOO{
     static int totald;
     static int tochild;
     public VANZOO(){
+        this(5);
         this.getout("Enter\n1 if you are visiting\n2 to see the end list\n0 to exit\n");
     }
-    // public VANZOO(int b)
-    // {
-    //     VANZOO();
-    // }
+    public VANZOO(int b)
+    {    
+        this.getout("50 For Adult\n20 for Children\n*******************************************************\n");
+    }
             
         public void getout(String h)
         {System.out.print(h);}
@@ -51,6 +52,8 @@ public class VANZOO{
                 v.getout("\nEnter the number of Children Visitors: ");
                 v.children=v.getin();
                 v.tochild=v.tochild+v.children;
+                v.getout("\nAmount to be paid:");
+                v.getout(v.adults*50+v.children*20);
                 v.getout("\n************************************************************\nEnter 1 if you are visiting\n2 to see the end list\n0 to exit\n");
             }
             if(v.decide==2)
