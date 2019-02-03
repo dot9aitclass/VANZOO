@@ -54,7 +54,7 @@ public class VANZOO{
                 v.tochild=v.tochild+v.children;
                 v.getout("\nAmount to be paid:");
                 v.getout(v.adults*50+v.children*20);
-                v.getout("\n************************************************************\nEnter 1 if you are visiting\n2 to see the end list\n0 to exit\n");
+                v.getout("\n\n************************************************************\nEnter\n1 if you are visiting\n2 to see the end list\n0 to exit\n");
             }
             if(v.decide==2)
             {   v.getout("**************************************************************\n");
@@ -66,7 +66,7 @@ public class VANZOO{
                 int sum1 = v.totald*50;
                 int sum2 = v.tochild*20;
                 v.getout(add(sum1,sum2));
-                v.getout("\n***********************************************************\nEnter 1 if you are visiting\n2 to see the end list\n0 to exit\n");
+                v.getout("\n\n***********************************************************\nEnter\n1 if you are visiting\n2 to see the end list\n0 to exit\n");
             }
         }
             
